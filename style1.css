@@ -55,6 +55,7 @@ background-color:black;
   color: cyan;
 }
 .main-cont{
+  display:block;
   display:flex;
   flex-direction:row;
   
@@ -66,11 +67,13 @@ background-color:black;
   justify-content: space-around;
 }
 .main-cont-sub{
+  color:white;
 width:35%;
 height: 88%;
 padding-top: 30px;
-background-color: white;
+background-color: #1b1b2f;
 margin:2%;
+color:#e43f5a;
 border-radius: 25px;
 border: 2px #e43f5a solid;
 }
@@ -170,6 +173,7 @@ border: 2px #e43f5a solid;
     width:100%;
     margin-left: 0px;
     height:500px;
+    margin-top: 500px;
   }
   .main-cont-sub{
     width:100%;
@@ -189,4 +193,3 @@ border: 2px #e43f5a solid;
     transform: translateX(-80%);
   }
 }
-
