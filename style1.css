@@ -5,6 +5,14 @@ body{
   color: white;
   font-family: 'Nunito', sans-serif;
 }
+.startbtn{
+  font-size: 45px;
+  margin:0;
+  text-decoration: none;
+  color:white;
+  border:2px white solid;
+  padding: 3px;
+}
 .main-head{
   margin-top:0px;
   font-size: 60px;
@@ -15,6 +23,7 @@ body{
 .main-cont{
   display:flex;
   flex-direction:row;
+  
   width:98%;
   margin:0 auto;
   height:100vh;
@@ -23,11 +32,11 @@ body{
   justify-content: space-around;
 }
 .main-cont-sub{
-width:25%;
+width:35%;
 height: 88%;
 padding-top: 30px;
 background-color: white;
-margin:0%;
+margin:2%;
 border-radius: 25px;
 border: 2px #e43f5a solid;
 }
@@ -35,6 +44,7 @@ border: 2px #e43f5a solid;
   width:50%;
   background-color: #e43f5a;
   margin:2%;
+  margin-left: 6%;
   border-radius: 25px;
   padding-bottom: 20px;
 }
@@ -93,3 +103,48 @@ border: 2px #e43f5a solid;
   border-radius: 10px;
   background-color: white;
 }
+@media (max-width:1200px){
+.main-cont{
+  flex-direction: column-reverse;
+  width:100%;
+  margin:2%;
+}
+.main-cont-sub-chatbox{
+  width:100%;
+  margin-left: 0px;
+  height:500px;
+}
+.main-cont-sub{
+  width:100%;
+}
+  
+}
+@media (max-width:768px){
+  .main-cont{
+    flex-direction: column-reverse;
+    width:100%;
+  }
+  .main-cont-sub-chatbox{
+    width:100%;
+    margin-left: 0px;
+    height:500px;
+  }
+  .main-cont-sub{
+    width:100%;
+    margin-left: -6px;
+  }
+  .main-head{
+    transform: translateX(-70%);
+  }
+}
+@media (max-width:400px){
+  .main-cont{
+    flex-direction: column-reverse;
+    width:100%;
+    margin-left: -6px;
+  }
+  .main-head{
+    transform: translateX(-80%);
+  }
+}
+
