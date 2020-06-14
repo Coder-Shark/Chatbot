@@ -15,7 +15,8 @@ body{
   padding-top: 80px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  
+ 
 }
 .intro-head{
   text-align: center;
@@ -27,9 +28,10 @@ body{
 }
 .intro-container{
   background-color: #e43f5a;
-  padding: 20px;
+  width:92%;
   border-radius: 25px;
   transition: transform .2s;
+  
 }
 .intro-container:hover {
   -ms-transform: scale(1.2);
@@ -41,10 +43,9 @@ body{
 }
 
 .btn-class{
-  position: absolute;
-  transform: translate(-50%,-50%);
-  padding-top: 130px;
-  padding-left: 1350px;
+  position: relative;
+  
+  
 }
 .btn{
   position: relative;
@@ -52,9 +53,9 @@ body{
   color: white;
   font-size: 14px;
   text-decoration: none;
-  margin: 30px 0;
+  margin:0 auto;
   border: 2px solid #e43f5a;
-  padding: 14px 60px;
+  padding: 14px 20px;
   text-transform: uppercase;
   overflow: hidden;
   transition: 1s all ease;
@@ -103,3 +104,38 @@ body{
     margin-top: 1px;
     color: cyan;
 }
+.but1{
+  transform:translateX(47vw);
+  background-color: #e43f5a;
+  color:white;
+  width:100px;
+  height:50px;
+  margin-top: 30px;
+}
+
+
+@media screen and (max-width:768px){
+  .container{
+    flex-direction: column-reverse;
+  }
+  
+}
+
+
+@media screen and (max-width:547px){
+  .container{
+    flex-direction: column-reverse;
+  }
+  .intro-container{
+    width:140vw;}
+    .but1{
+      transform:translateX(57vw);
+      margin-top: 0;
+    }
+  
+    
+    
+}
+
+
+
