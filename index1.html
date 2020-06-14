@@ -8,13 +8,30 @@
   </head>
   <body>
     <script src="script.js"></script>
+   
     <div class="main">
+      
       <header>
-        <a href="javascript:void(0)" class="startbtn">&#9776;</a>
+        <a href="javascript:void(0)" class="startbtn" onclick="opennav()">&#9776;</a>
         <h1 align="center" class="main-head">Chatbot</h1></header>
+        <div class="slidenav" id="nav">
+          <a href="javascript:void(0)" id="navclose" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#" class="topic"><img src="https://img.icons8.com/windows/32/000000/home.png"/>Home</a>
+            <a href="#" class="topic"><img src="https://img.icons8.com/windows/32/000000/new-contact.png"/>Contact</a>
+            <a href="#" class="topic"><img src="https://img.icons8.com/android/24/000000/news.png"/>News</a>
+            <a href="#" class="topic"><img src="https://img.icons8.com/android/24/000000/domain.png"/>Websites</a>
+          <a href="#">Sanchit</a><br>
+          <a href="#">Ved</a><br>
+          <a href="#">Shahin</a><br>
+          <a href="#">Fredy</a><br>
+          
+
+          </div>
+    
+        
       <div class="main-cont">
         <div class="main-cont-sub">
-          
+          <h1>What this chatbot can do;</h1>
       </div>
       <div class="main-cont-sub-chatbox">
         <div class="main-chatbox">
@@ -25,10 +42,7 @@
             
           </div>
           <div class="input-field">
-            <div class="input-div">
-             <input class="input" type="text" placeholder="Chat...">
-             <button class="button">Send</button>
-            </div>
+            
           </div>
 
         </div>
