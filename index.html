@@ -1,112 +1,48 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html>
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #1b1b2f;
-    color: white;
-    font-family: 'Nunito', sans-serif;
-}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ChatBot</title>
+    <!-- The following is bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap" rel="stylesheet">
+</head>
 
-.container {
-    padding: 0;
-    padding-top: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+<body>
+    <script src="script.js"></script>
+    <header id="header">
+        <img src="logo.png" alt="Our logo" class="logo">
+        <p class="int-p">Hi i am,</p>
+        <p class="text-center heading">Katherine</p>
+    </header>
+    <div class="container">
+        <div class="intro-container">
+            <h2 class="intro-head">Version 1.0</h2>
+            <p style="padding-left: 8px;">Hi, I am a bot design with the core purpose to only entertain you</p>
+            <ul>
+                <li style="padding-top: 12px;">Features</li>
+                <li>I can tell jokes</li>
+                <li>I can show you links of crazy science videos</li>
+                <li>Open Sourced</li>
+                <li>Easy to interact</li>
+                <li>I can redirect you to website to play games</li>
+                <h5 style="padding-top: 8px;">Click on the below button to chat</h5>
+            </ul>
+        </div>
+        <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="screenshot" class="img-screenshot">
+        </div>
 
-.intro-head {
-    text-align: center;
-    font-weight: 400px;
-    padding-bottom: 30px;
-}
 
-.heading:hover {
-    color: #e43f5a;
-}
 
-.intro-container {
-    background-color: #e43f5a;
-    width: 50%;
-    border-radius: 25px;
-    transition: transform .2s;
-}
+    </div>
+    <div class="btn-class">
+        <button onclick="window.location.href='chatbox/index1.html'" class="but1">CHATBOT</button>
+    </div>
 
-.intro-container:hover {
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-}
+</body>
 
-.img-screenshot {
-    border-radius: 25px;
-}
-
-.btn-class {
-    position: relative;
-}
-
-.int-p {
-    text-align: center;
-    padding-right: 200px;
-    padding-bottom: 0px;
-    margin-bottom: 1px;
-}
-
-#header {
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 5px;
-}
-
-.logo {
-    margin-left: 8px;
-    padding-top: 5px;
-    float: left;
-    border-radius: 50%;
-    height: 100px;
-    width: 110px;
-}
-
-.heading {
-    font-size: 40px;
-    font-weight: 600;
-    padding-top: 1px;
-    margin-top: 1px;
-    color: cyan;
-}
-
-.but1 {
-    transform: translateX(47vw);
-    background-color: #e43f5a;
-    color: white;
-    width: 100px;
-    height: 50px;
-    margin-top: 30px;
-    border-radius: 15px;
-}
-
-@media screen and (max-width:768px) {
-    .container {
-        flex-direction: column-reverse;
-    }
-}
-
-@media screen and (max-width:547px) {
-    .container {
-        flex-direction: column-reverse;
-    }
-    .intro-container {
-        width: 140vw;
-    }
-    .but1 {
-        transform: translateX(57vw);
-        margin-top: 0;
-    }
-}
+</html>
